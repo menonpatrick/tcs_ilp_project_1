@@ -1,0 +1,100 @@
+
+body {
+	background: white;
+}
+
+* {
+	box-sizing: border-box;
+}
+
+ul {
+	margin-bottom: 75px;
+}
+
+li {
+	list-style-type: none;
+}
+
+i {
+	text-transform: uppercase;
+}
+
+
+footer {
+	background: rgb(29, 28, 28);
+	height: 60px;
+	width: 100%;
+	bottom: 0;
+	position: fixed;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.navbar {
+	z-index: 1;
+}
+
+.sticky {
+	overflow: hidden;
+	position: fixed;
+	width: 100%;
+}
+.blur {
+	filter: blur(8px);
+}
+
+.mid {
+	width: 50%;
+}
+
+.home {
+	background-image: url("images/home.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 730px;
+}
+
+.aboutMe {
+	background-image: url("images/about.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 730px;
+}
+
+.contactMe {
+	background-image: url("images/contact.jpg");
+	background-repeat: no-repeat;
+	background-size: 100% 100%;
+	height: 730px;
+}
+
+.comment {
+	background-color: #fff;
+	background-repeat: no-repeat;
+	background-size: auto;
+	height: 730px;
+}
+
+.back {
+	background-color: #fff;
+	border-radius: 5px;
+	padding: 30px;
+}
+
+.comment-text {
+    background: rgb(204, 201, 201);
+	margin-top: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    min-height: 80px;
+    width: 50%;
+}
+
+.close {
+    cursor: pointer;
+}
+
+.font-20 {
+	font-size: 20px;
+}
