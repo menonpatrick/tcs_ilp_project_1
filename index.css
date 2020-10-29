@@ -83,12 +83,12 @@ footer {
 }
 
 .comment-text {
-    background: rgb(204, 201, 201);
+    background: rgb(248, 245, 245);
 	margin-top: 20px;
     padding: 20px;
     border-radius: 10px;
     min-height: 80px;
-    width: 50%;
+    width: 70%;
 }
 
 .close {

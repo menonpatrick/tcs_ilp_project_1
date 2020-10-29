@@ -45,7 +45,7 @@ function addListItem() {
     var t = document.createTextNode(title);
     var t2 = document.createTextNode(inputValue);
 
-    var br = document.createElement("br");
+    var br = document.createElement("hr");
 
     li.appendChild(div_container);
     div_container.appendChild(div_row);
