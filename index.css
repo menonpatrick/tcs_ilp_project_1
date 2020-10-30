@@ -19,6 +19,10 @@ h4 {
 	text-transform: uppercase;
 }
 
+.active {
+	color: #fff;
+}
+
 
 footer {
 	background: rgb(29, 28, 28);

@@ -83,18 +83,25 @@ function addListItem() {
 }
 
 var high = document.getElementsByClassName("high");
-console.log(document.getElementsByClassName("nav-link")[1]);
 var nav_span = document.createElement("SPAN");
 nav_span.classList.add('sr-only');
 var current = document.createTextNode("(current)");
 nav_span.appendChild(current);
-var j;
-for (j = 0; j < high.length; j++) {
-    high[j].onclick = function () {
-        console.log(j);
-        document.getElementsByClassName("high")[j].appendChild(nav_span);
-    }
-}
+// var j;
+// for (j = 0; j < high.length; j++) {
+//     console.log("The value of j is: " + j);
+//     high[j].onclick = function () {
+//         document.getElementsByClassName("high")[j].appendChild(nav_span);
+//     }
+// }
+
+
+$(document).ready(function(){
+    $('high').click(function(){
+        $('high').removeClass("active");
+        $(this).addClass("active");
+    });
+});
 
 
 
