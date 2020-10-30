@@ -15,6 +15,7 @@ var close = document.getElementsByClassName("close");
 var i;
 for (i = 0; i < close.length; i++) {
     close[i].onclick = function () {
+        console.log(i);
         var div = this.parentElement.parentElement.parentElement;
         div.style.display = "none";
     }
@@ -52,10 +53,10 @@ function addListItem() {
     div_row.appendChild(div_col_11);
     div_row.appendChild(div_col);
 
+    h4.appendChild(t);
+    h4.appendChild(br);
     div_col_11.appendChild(h4);
-    h4.appendChild(i);
-    i.appendChild(t);
-    i.appendChild(br);
+    // i.appendChild(t);
     div_col_11.appendChild(t2);
 
     if (inputValue === '' || title === '') {
@@ -80,6 +81,22 @@ function addListItem() {
         }
     }
 }
+
+var high = document.getElementsByClassName("high");
+console.log(document.getElementsByClassName("nav-link")[1]);
+var nav_span = document.createElement("SPAN");
+nav_span.classList.add('sr-only');
+var current = document.createTextNode("(current)");
+nav_span.appendChild(current);
+var j;
+for (j = 0; j < high.length; j++) {
+    high[j].onclick = function () {
+        console.log(j);
+        document.getElementsByClassName("high")[j].appendChild(nav_span);
+    }
+}
+
+
 
 function printError(element, msg) {
     document.getElementById(element).innerHTML = msg;
@@ -144,3 +161,4 @@ function validate() {
         alert('You have submitted the form..')
     }
 }
+
